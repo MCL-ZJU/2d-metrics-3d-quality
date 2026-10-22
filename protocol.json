@@ -1,0 +1,81 @@
+{
+  "seed": 20261022,
+  "bootstrap_replicates": 2000,
+  "key_metrics": [
+    "PSNR",
+    "FSIM",
+    "DISTS",
+    "VSI",
+    "TOPIQ-FR",
+    "FDIM",
+    "Q-Align",
+    "UniPercept-IAA",
+    "UniPercept-IQA",
+    "UniPercept-ISTA"
+  ],
+  "all_metrics": [
+    "PSNR",
+    "SSIM",
+    "MS-SSIM",
+    "FSIM",
+    "GMSD",
+    "VSI",
+    "LPIPS",
+    "DISTS",
+    "TOPIQ-FR",
+    "VMAF",
+    "FDIM",
+    "NIQE",
+    "BRISQUE",
+    "ILNIQE",
+    "PI",
+    "HyperIQA",
+    "DBCNN",
+    "PaQ-2-PiQ",
+    "NIMA",
+    "MANIQA",
+    "MUSIQ",
+    "LIQE",
+    "CLIP-IQA+",
+    "Q-Align",
+    "UniPercept-IAA",
+    "UniPercept-IQA",
+    "UniPercept-ISTA"
+  ],
+  "gap_bins": [
+    0.0,
+    0.05,
+    0.1,
+    0.2,
+    0.4,
+    1.000001
+  ],
+  "gap_scale": "absolute MOS difference divided by observed database MOS range",
+  "pairs": "all unordered pairs; exact MOS ties excluded; objective ties count 0.5; nonfinite scores excluded per metric",
+  "weighting": "within: equal content groups; across: equal unordered content pairs; common-gap comparison: equal nonempty bins",
+  "coverage": "All 27 outputs complete on five databases; no cross-database average",
+  "visual_material": "Not available, confirmed by user; candidate screening only",
+  "inputs": {
+    "data/FDIM_per_video_all.xlsx": "bec460788281d1fcfffd83350f451aa72eeb91f920017ec78c27bf77f2e52918",
+    "data/IQA_Scores_20261021.xlsx": "47b2373b8502208b89d4acf4a32bdda57516265ea4c8e121e03a0c038bcf1356"
+  },
+  "databases": [
+    "Explicit-NeRF-QA",
+    "GSComp-QA",
+    "MCL-3D",
+    "MUGSQA",
+    "NeRF-QA"
+  ],
+  "records": 3750,
+  "refinement_seed": 20261023,
+  "scope": "five complete databases; NVS-QA excluded; no cross-database averages",
+  "inference": "Exploratory marginal percentile intervals, no multiplicity adjustment or participant resampling",
+  "matched_controls": [
+    "sequence",
+    "method",
+    "input_views",
+    "resolution",
+    "view_to_object_distance",
+    "initialization"
+  ]
+}
